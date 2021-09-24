@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+
+  ws1:
+    build: ./ws1
+    ports:
+    - "5001:5000"
+  ws2:
+    build: ./ws2
+    ports:
+    - "5002:5000"
+   
+  loadbalancer:
+    build: ./loadbalancer
+    ports:
+    - 80:8080
+    depends_on:
+      - ws1
+      - ws2
+    # networks:
+      # - docker-laravel_tes:
+        # ipv4_address: 10.1.1.254
+
+# networks:
+#   docker-laravel_tes:
+#     driver: bridge
+#     ipam:
+#         driver: default
+#         config:
+#             - subnet: 10.1.1.0/24                
