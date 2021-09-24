@@ -18,14 +18,14 @@ services:
     depends_on:
       - ws1
       - ws2
-    # networks:
-      # - docker-laravel_tes:
-        # ipv4_address: 10.1.1.254
+    networks:
+      tes:
+        ipv4_address: 172.19.0.4
 
-# networks:
-#   docker-laravel_tes:
-#     driver: bridge
-#     ipam:
-#         driver: default
-#         config:
-#             - subnet: 10.1.1.0/24                
+networks:
+  tes:
+    driver: bridge
+    ipam:
+        driver: default
+        config:
+            - subnet: 172.19.0.4/24               
