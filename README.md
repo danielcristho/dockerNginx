@@ -1,1 +1,1 @@
-# load balancing using nginx
+# load balancing using nginx&docker-compose
