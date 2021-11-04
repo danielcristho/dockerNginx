@@ -1,1 +1,1 @@
-# load balancing using nginx&docker-compose
+# reverse proxy with Nginx&Docker
