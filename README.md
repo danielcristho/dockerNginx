@@ -1,1 +1,11 @@
-# reverse proxy with Nginx&Docker
+# Nginx reverse proxy with Docker
+
+### create
+
+```yml
+$ docker-compose build
+```
+### run
+```yml
+$ docker-compose run -d
+```
