@@ -1,4 +1,4 @@
-# Nginx reverse proxy with Docker
+# simple Nginx loadbalancing on Docker 
 
 ### create
 
