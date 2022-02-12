@@ -1,0 +1,9 @@
+version: '2'
+services:
+  app:
+    container_name: ws1
+    image: nginx:1.9
+    volumes:
+      - .:/usr/share/nginx/html
+    expose:
+      - "80"  
