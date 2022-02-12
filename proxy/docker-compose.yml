@@ -1,0 +1,17 @@
+version: '2'
+services:
+  proxy:
+    build: ./
+    networks:
+      - site1
+      - site2
+    ports:
+      - "80:80"
+      - "443:443"
+networks:
+  site1:
+    external:
+      name: webservice1_default 
+  site2:
+    external:
+      name: webservice2_default           
